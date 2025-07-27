@@ -24,6 +24,15 @@ a {
   margin-left: auto;
   margin-right: auto;
 }
+.heading-lv2 {
+  color: #171100;
+  font-family: var(--box-font);
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 48%; /* 126.316% */ /* 48px */
+
+  letter-spacing: -0.76px;
+}
 .btn {
   display: inline-block;
   padding: 9px 16px;
@@ -39,6 +48,7 @@ a {
 
 .btn:hover {
   opacity: 0.9;
+  cursor: pointer;
 }
 /* ======================== HEADER ===================== */
 .header {
@@ -258,4 +268,107 @@ a {
 }
 .hero .stats strong:nth-child(2) {
   margin-left: 28px;
+}
+
+/* ======================== POPULAR ===================== */
+.popular {
+  padding-top: 65px;
+  /* background-color: blue; */
+  margin-top: 135px;
+}
+.popular-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.popular-top .desc {
+  width: 458px;
+  margin-top: 16px;
+  color: #5f5b53;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 167%; /* 166.667% */ /* 30px */
+}
+
+.popular-top .controls {
+  display: flex;
+  gap: 18px;
+}
+.popular-top .controls-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  color: var(--primary-color);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--primary-color);
+}
+.popular-top .controls-btn:hover {
+  background: var(--primary-color);
+  color: white;
+  cursor: pointer;
+}
+.popular .course-list {
+  margin-top: 55px;
+  gap: 30px;
+  display: flex;
+}
+
+.popular .course-items .thumb {
+  width: 100%;
+  height: 278px;
+  border-radius: 12px 12px 0 0;
+  /* Để ảnh không bị méo */
+  object-fit: cover;
+}
+.popular .course-items {
+  border-radius: 12px;
+  border: 1px solid #e2dfda;
+  background: #fff;
+}
+.popular .course-items:hover {
+  border: 1px solid transparent;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 18px 36px 0 rgba(0, 0, 0, 0.05);
+}
+.popular .course-items .info {
+  padding: 16px 22px 22px;
+}
+.popular .head,
+.popular .foot,
+.popular .rating {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.popular .title a,
+.price {
+  color: #171100;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 167%; /* 166.667% 30px*/
+}
+.popular .rating .avalue {
+  color: var(--primary-color);
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 175%; /* 175% 28px */
+}
+
+.popular .desc {
+  margin-top: 6px;
+  margin-bottom: 22px;
+  color: #5f5b53;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 186%; /* 185.714% 26px*/
+}
+.popular .foot .btn-book {
+  border: none;
+}
+.popular .foot .btn-book:hover {
+  background: var(--primary-color);
 }
